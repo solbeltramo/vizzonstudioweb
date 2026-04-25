@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Creación de sitios web modernos, minimalistas y personalizados para pequeñas y medianas empresas. Encuentra todo lo que necesitas en un solo lugar.">
+  <meta name="keywords" content="sitios web, diseño web, landing page, sitios institucionales, servicios web">
+  <meta name="author" content="Tu negocio de creación de sitios web">
+  <title>Creación de Sitios Web Profesionales</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome (para íconos) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <!-- Estilos -->
+  <style>
+    :root {
+      --azul-fondo: #1e3a8a;
+      --rojo-fondo: #1e0000;
+      --degrade-inicio: linear-gradient(90deg, #c89116, #fffefe);
+      --blanco: #ffffff;
+      --gris: #f5f5f5;
+      --negro: #222222;
+      --fuente-principal: 'Roboto', sans-serif;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: var(--fuente-principal);
+      background-color: var(--gris);
+      color: var(--negro);
+      line-height: 1.6;
+    }
+
+    /* Encabezado */
+    header {
+      background: var(--azul-fondo);
+      color: var(--blanco);
+      padding: 1.5rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      background: var(--degrade-inicio);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    header p {
+      margin-top: 0.5rem;
+      font-size: 1.2rem;
+    }
+
+    /* Menú de navegación */
+    nav {
+      display: flex;
+      justify-content: center;
+      background: var(--rojo-fondo);
+      padding: 0.8rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav a {
+      color: var(--blanco);
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: var(--degrade-inicio);
+    }
+
+    /* Sección: Inicio */
+    section#inicio {
+      text-align: center;
+      padding: 3rem 1rem;
+      background: var(--azul-fondo);
+      color: var(--blanco);
+    }
+
+    section#inicio h2 {
+      font-size: 2.2rem;
+      margin-bottom: 1rem;
+    }
+
+    section#inicio p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    section#inicio a {
+      padding: 0.8rem 1.5rem;
+      background: var(--degrade-inicio);
+      color: var(--blanco);
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: 700;
+      transition: background 0.3s ease;
+    }
+
+    section#inicio a:hover {
+      background: var(--rojo-fondo);
+    }
+
+    /* Sección: Servicios */
+    section#servicios {
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+
+    section#servicios h2 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      color: var(--azul-fondo);
+    }
+
+    .servicio {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .servicio-card {
+      background: var(--blanco);
+      padding: 2rem;
+      border-radius: 5px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      text-align: left;
+    }
+
+    .servicio-card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: var(--rojo-fondo);
+    }
+
+    .servicio-card p {
+      margin-bottom: 1rem;
+      line-height: 1.5;
+    }
+
+    .servicio-card a {
+      text-decoration: none;
+      color: var(--azul-fondo);
+      font-weight: 700;
+    }
+
+    /* Sección: Contacto */
+    section#contacto {
+      padding: 3rem 1rem;
+      background: var(--rojo-fondo);
+      color: var(--blanco);
+      text-align: center;
+    }
+
+    section#contacto h2 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .formulario {
+      max-width: 600px;
+      margin: 0 auto;
+      text-align: left;
+    }
+
+    .formulario label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 500;
+    }
+
+    .formulario input,
+    .formulario textarea {
+      width: 100%;
+      padding: 0.8rem;
+      margin-bottom: 1.5rem;
+      border: none;
+      border-radius: 5px;
+    }
+
+    .formulario button {
+      padding: 0.8rem 1.5rem;
+      background: var(--degrade-inicio);
+      color: var(--blanco);
+      border: none;
+      border-radius: 5px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    .formulario button:hover {
+      background: var(--azul-fondo);
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 1rem 0;
+      background: var(--azul-fondo);
+      color: var(--blanco);
+    }
+
+    footer a {
+      color: var(--degrade-inicio);
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: var(--blanco);
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Creación de Sitios Web</h1>
+    <p>Modernos, minimalistas y personalizados para tu empresa</p>
+  </header>
+
+  <!-- Navegación -->
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <!-- Sección Inicio -->
+  <section id="inicio">
+    <h2>¡Hagamos realidad tu sitio web!</h2>
+    <p>Diseñamos sitios institucionales y landing pages que reflejan la identidad de tu negocio.</p>
+    <a href="#contacto">Contáctanos</a>
+  </section>
+
+  <!-- Sección Servicios -->
+  <section id="servicios">
+    <h2>Nuestros Servicios</h2>
+    <div class="servicio">
+      <div class="servicio-card">
+        <h3>Sitios Institucionales</h3>
+        <p>Un sitio profesional que muestre la identidad de tu negocio. Ideal para empresas que necesitan una presencia sólida en internet.</p>
+        <a href="#contacto">Solicitar ahora</a>
+      </div>
+      <div class="servicio-card">
+        <h3>Landing Pages</h3>
+        <p>Páginas diseñadas para campañas específicas, con un enfoque en conversión y comunicación clara.</p>
+        <a href="#contacto">Solicitar ahora</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Contacto -->
+  <section id="contacto">
+    <h2>Contáctanos</h2>
+    <p>¿Tienes dudas o quieres un sitio web para tu negocio? ¡Déjanos tu consulta!</p>
+    <div class="formulario">
+      <form action="https://formspree.io/f/{tu-id}" method="POST">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" required>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 Creación de Sitios Web | <a href="#">Política de privacidad</a></p>
+    <p>
+      <a href="https://wa.me/5491123456789" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a> |
+      <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i> Instagram</a> |
+      <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
+    </p>
+  </footer>
+</body>
+</html>
